@@ -1,7 +1,8 @@
-import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-import pickle
-from sklearn.naive_bayes import GaussianNB
+# Importação das bibliotecas necessárias
+import pandas as pd # Para manipulação de dados
+from sklearn.preprocessing import LabelEncoder # Para codificar variáveis categóricas
+import pickle # Para salvar objetos em arquivos
+from sklearn.naive_bayes import GaussianNB # Algoritmo de classificação Naive Bayes
 
 # 1. Lendo o arquivo CVS
 base_risco_credito = pd.read_csv('risco_credito.csv')
