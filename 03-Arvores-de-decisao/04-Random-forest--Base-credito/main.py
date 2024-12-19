@@ -19,7 +19,7 @@ random_forest_credit.fit(x_credit_treinamento, y_credit_treinamento)
 previsoes = random_forest_credit.predict(x_credit_teste)
 
 # Mostra a precisão (percentual de acertos) do modelo
-print("Acurácia:", accuracy_score(y_credit_teste, previsoes))
+print(accuracy_score(y_credit_teste, previsoes))
 
 # Mostra métricas detalhadas sobre as previsões
-print("Relatório de classificação:\n", classification_report(y_credit_teste, previsoes))
+print(classification_report(y_credit_teste, previsoes))
