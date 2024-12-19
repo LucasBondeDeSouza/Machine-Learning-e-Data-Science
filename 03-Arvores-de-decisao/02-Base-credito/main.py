@@ -29,15 +29,11 @@ previsores = ['income', 'age', 'loan']
 fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(8, 6))  # Tamanho do gráfico ajustado
 
 # Gerando o gráfico da árvore de decisão:
-# - feature_names: Nomes das características preditoras
-# - class_names: Classes alvo convertidas para strings ('0' e '1' representam as classes)
-# - filled: Nós preenchidos com cores para representar as classes
-# - fontsize: Define o tamanho da fonte para facilitar a leitura
 tree.plot_tree(
     avore_credit, 
-    feature_names=previsores, 
-    class_names=['0', '1'],  # Convertendo as classes para strings
-    filled=True,
+    feature_names=previsores, # - feature_names: Nomes das características preditoras
+    class_names=['0', '1'],  # - class_names: Classes alvo convertidas para strings ('0' e '1' representam as classes)
+    filled=True, # - filled: Nós preenchidos com cores para representar as classes
     fontsize=8  # Ajustando o tamanho da fonte
 )
 # Salvando o gráfico gerado em um arquivo de imagem
