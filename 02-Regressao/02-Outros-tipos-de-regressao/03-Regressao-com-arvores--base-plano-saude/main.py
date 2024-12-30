@@ -28,7 +28,7 @@ x_teste_arvore = x_teste_arvore.reshape(-1, 1)  # Reshape para o formato esperad
 
 # Atualiza o gráfico com a nova previsão detalhada
 grafico = px.scatter(x=x_plano_saude.ravel(), y=y_plano_saude)  # Pontos reais
-grafico.add_scatter(x=x_plano_saude.ravel(), y=regressor_arvore_saude.predict(x_teste_arvore), name='Regressão')  # Linha detalhada
+grafico.add_scatter(x=x_teste_arvore.ravel(), y=regressor_arvore_saude.predict(x_teste_arvore), name='Regressão')  # Linha detalhada
 grafico.show()
 
 # Faz uma previsão para uma idade específica (exemplo: 40 anos)
