@@ -53,7 +53,7 @@ print(pca.explained_variance_ratio_)
 print(pca.explained_variance_ratio_.sum())  # Soma da variância explicada pelas 8 componentes
 
 # Cria um modelo de floresta aleatória para prever a classe alvo
-random_forest_census_pca = RandomForestClassifier(n_estimators=40, random_state=0)
+random_forest_census_pca = RandomForestClassifier(n_estimators=40, random_state=0, criterion='entropy')
 random_forest_census_pca.fit(x_census_treinamento_pca, y_census_treinamento)
 
 # Faz previsões no conjunto de teste
