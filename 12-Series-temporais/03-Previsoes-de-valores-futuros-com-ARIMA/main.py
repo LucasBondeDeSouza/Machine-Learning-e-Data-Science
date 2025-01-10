@@ -1,9 +1,5 @@
 # Importa bibliotecas necessárias para manipulação de dados e análise de séries temporais
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from datetime import datetime
-from statsmodels.tsa.seasonal import seasonal_decompose  # Para decompor a série temporal
 from pmdarima.arima import auto_arima  # Para modelar a série temporal
 
 # Carrega os dados do arquivo CSV, tratando a coluna 'Month' como datas e definindo como índice da tabela
